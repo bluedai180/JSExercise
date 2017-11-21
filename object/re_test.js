@@ -57,3 +57,13 @@ if (success) {
     console.log('测试通过!');
 }
 
+
+var re_mail_name = /^<(\w+\s+\w+)>\s+(\w+@\w+?.\w+)$/;
+// 测试:
+var r = re_mail_name.exec('<Tom Paris> tom@voyager.org');
+if (r === null || r.toString() !== ['<Tom Paris> tom@voyager.org', 'Tom Paris', 'tom@voyager.org'].toString()) {
+    console.log('测试失败!' + r);
+}
+else {
+    console.log('测试成功!');
+}
