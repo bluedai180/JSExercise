@@ -67,3 +67,7 @@ if (r === null || r.toString() !== ['<Tom Paris> tom@voyager.org', 'Tom Paris', 
 else {
     console.log('测试成功!');
 }
+
+var s_test = 'dAiEq145weolc2Qp4';
+var re_s = /\d+/g;
+console.log(s_test.match(re_s).join(""));
